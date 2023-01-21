@@ -550,54 +550,28 @@ html{
 
 /* Meet section starts here */
 
-.meet-title-1{
-    font-size: 19px;
-    font-weight: 500;
-    color: blue;
 
-}
-
-.looking-img{
-    
+.our-team-main{
     width: 100%;
     height: auto;
-
 }
 
-.meet-title-2{
-    font-size: 51px;
-    font-weight: 700;
-    font-family: "Cambria", sans-serif;
-}
-
-.bg-cover{
+.our-sengel-one{
+    position: relative;
+    background-image: url(./img/team1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-}
-
-.meet-img-card{
+    background-size: cover;
     width: 100%;
     height: 450px;
-    position: relative;
     z-index: 1;
     border-radius: 10px;
     overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     padding: 40px;
     margin-top: 30px;
-  }
-  
+}
 
-.meet-img-card::before{
+.our-sengel-one::before{
     position: absolute;
     left: 0;
     bottom: 0;
@@ -605,24 +579,85 @@ html{
     height: 100%;
     content: "";
     z-index: -1;
-    /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#050d72)); */
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #050d72 100%);
     opacity: 0.7;
 }
 
+.salman-one{
+    font-size: 26px;
+    font-weight: 700;
+}
 
+.salman-two{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 9px;
+}
 
-
-.meet-looking{
+.our-member-list{
     overflow: hidden;
     position: absolute;
     bottom: 40px;
     left: 0;
     width: 100%;
+
+}
+
+.our-member-socal a i{
+    width: 40px;
+    height: 37px;
+    text-align: center;
+    font-size: 23px;
+    line-height: 32px;
+    display: inline-block;
+    margin: 0px 2px;
+    background-color: #fff;
+    color: #565F7B;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.our-sengel-one .our-team-one{
+    overflow: hidden;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+}
+
+.our-sengel-one .our-team-one .our-member-list{
+    position: relative;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    visibility: inherit;
+    top: 0;
+}
+
+.our-sengel-one:hover .our-team-one .our-member-list{
+    opacity: 0;
+    top: 20px;
+    visibility: hidden;
+  
+}
+
+.our-sengel-one .our-team-one .our-member-socal{
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    bottom: 62px;
+    left: 0;
+    width: 100%;
+}
+
+
+.our-sengel-one:hover .our-team-one .our-member-socal{
+    opacity: 1;
+    bottom: 0;
+    visibility: visible;
   }
-
-
-
 /* Meet section ends here */
 
 
@@ -1054,7 +1089,6 @@ border-radius: 10px;
 
 .form-control{
     width: 100%;
-    background: #404CEB;
     line-height: 1;
     padding: 20px 30px;
     border: 0px;
@@ -1612,6 +1646,15 @@ color: #fff;
 
 .navbar-nav .nav-link{
     font-size: 16px;
+}
+
+.contact-title-2{
+    font-size: 24px;
+}
+
+.contact-title-3{
+    font-size: 16px;
+    width: 60%;
 }
 }
 
